@@ -1,6 +1,6 @@
 # mapa-el-salvador
 Proyecto de Catedra Fase I de Desarrollo de Aplicaciones Web 2024
-Equipo: Elmer Cruz
-        Adan Ruano
-        Blanca Maravilla
+Equipo: Elmer Cruz,
+        Adan Ruano,
+        Blanca Maravilla,
         Rebeca Orozco
