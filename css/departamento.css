@@ -1,0 +1,30 @@
+/* Contenedor principal del mapa */
+.mapadiv {
+    width: 100%;
+    height: 600px; /* Ajusta según prefieras */
+}
+
+/* Estilos para el SVG */
+.mapadiv svg {
+    width: 100%;
+    height: 100%;
+    max-width: none; /* Evita restricciones en el tamaño */
+}
+
+/* Estilos para el path del mapa */
+.mapadiv path {
+    fill: #6f9c76;
+    stroke: #90EE90;
+    stroke-width: 1.5px;
+}
+
+/* Estilo del carrusel */
+.carousel-inner img {
+    max-height: 310px;
+    object-fit: cover;
+}
+
+.row {
+    display: flex;
+    align-items: flex-start;
+}
