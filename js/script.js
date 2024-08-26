@@ -229,21 +229,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const mensaje = document.getElementById('mensaje').value;
 
         // Verifica si el teléfono cumple con el formato esperado
-        const phonePattern1 = /^\d{4} \d{4}$/;
-        const phonePattern2 = /^\d{4}-\d{4}$/;
-        const phonePattern3 = /^\d{4}\d{4}$/;
-
-        if (!phonePattern1.test(telefono)){
+        const phonePattern = /^\d{4} \d{4}$/;
+        if (!phonePattern.test(telefono)) {
             alert('Por favor, ingrese un número de teléfono válido en el formato #### ####');
-            if (!phonePattern2.test(telefono)) { 
-                alert('Por favor, ingrese un número de teléfono válido en el formato #### ####');
-                if (!phonePattern3.test(telefono)) { 
-                    alert('Por favor, ingrese un número de teléfono válido en el formato #### ####');
-                    return; // Sale de la función si el formato es incorrecto
-                }
-            }
-           
-        } 
+            return; // Sale de la función si el formato es incorrecto
+        }
 
         // Muestra los valores en una alerta
         alert(`Nombre: ${nombre}\nApellido: ${apellido}\nCorreo: ${correo}\nTeléfono: ${telefono}\nDepartamento: ${departamento}\nMensaje: ${mensaje}`);
