@@ -448,8 +448,8 @@ function showInfoBox(event, department, info) {
     var infoBox = document.getElementById('info-box');
     infoBox.innerHTML = `<strong>${department}</strong><br>${info}`;
     infoBox.style.display = 'block';
-    infoBox.style.left = event.pageX + 'px';
-    infoBox.style.top = event.pageY + 'px';
+    infoBox.style.left = event.pageX + 25 + 'px';
+    infoBox.style.top = event.pageY + 25 + 'px';
 }
 
 // Ocultar cuadro
