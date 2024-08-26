@@ -77,54 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ul.appendChild(li);
     });
 
-    // Crea el dropdown para los departamentos
-    const dropdown = document.createElement("li");
-    dropdown.className = "nav-item dropdown";
-
-    const dropdownToggle = document.createElement("a");
-    dropdownToggle.className = "nav-link dropdown-toggle";
-    dropdownToggle.href = "#";
-    dropdownToggle.setAttribute("role", "button");
-    dropdownToggle.setAttribute("data-bs-toggle", "dropdown");
-    dropdownToggle.setAttribute("aria-expanded", "false");
-    dropdownToggle.textContent = "Departamentos";
-
-    const dropdownMenu = document.createElement("ul");
-    dropdownMenu.className = "dropdown-menu";
-
-    // Define los departamentos y los añade al menú desplegable
-    const departments = [
-        { name: "Ahuachapán", link: "../departamentos/ahuachapan.html" },
-        { name: "Cabañas", link: "../departamentos/cabanas.html" },
-        { name: "Chalatenango", link: "../departamentos/chalatenango.html" },
-        { name: "Cuscatlán", link: "../departamentos/cuscatlan.html" },
-        { name: "La Libertad", link: "../departamentos/la_libertad.html" },
-        { name: "La Paz", link: "../departamentos/la_paz.html" },
-        { name: "La Unión", link: "../departamentos/la_union.html" },
-        { name: "Morazán", link: "../departamentos/morazan.html" },
-        { name: "San Miguel", link: "../departamentos/san_miguel.html" },
-        { name: "San Salvador", link: "../departamentos/san_salvador.html" },
-        { name: "San Vicente", link: "../departamentos/san_vicente.html" },
-        { name: "Santa Ana", link: "../departamentos/santa_ana.html" },
-        { name: "Sonsonate", link: "../departamentos/sonsonate.html" },
-        { name: "Usulután", link: "../departamentos/usulutan.html" }
-    ];
-
-    // Añade cada departamento al menú desplegable
-    departments.forEach(dept => {
-        const li = document.createElement("li");
-        const a = document.createElement("a");
-        a.className = "dropdown-item";
-        a.href = dept.link;
-        a.textContent = dept.name;
-        li.appendChild(a);
-        dropdownMenu.appendChild(li);
-    });
-
-    dropdown.appendChild(dropdownToggle);
-    dropdown.appendChild(dropdownMenu);
-    ul.appendChild(dropdown);
-
+    
     // Define y añade los menús de zonas
     const zonas = [
         {
