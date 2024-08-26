@@ -235,14 +235,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (!phonePattern1.test(telefono)){
             alert('Por favor, ingrese un número de teléfono válido en el formato #### ####');
-            return; // Sale de la función si el formato es incorrecto
-        } if (!phonePattern2.test(telefono)) { 
-            alert('Por favor, ingrese un número de teléfono válido en el formato #### ####');
-            return; // Sale de la función si el formato es incorrecto
-        } if (!phonePattern3.test(telefono)) { 
-            alert('Por favor, ingrese un número de teléfono válido en el formato #### ####');
-            return; // Sale de la función si el formato es incorrecto
-        }
+            if (!phonePattern2.test(telefono)) { 
+                alert('Por favor, ingrese un número de teléfono válido en el formato #### ####');
+                if (!phonePattern3.test(telefono)) { 
+                    alert('Por favor, ingrese un número de teléfono válido en el formato #### ####');
+                    return; // Sale de la función si el formato es incorrecto
+                }
+            }
+           
+        } 
 
         // Muestra los valores en una alerta
         alert(`Nombre: ${nombre}\nApellido: ${apellido}\nCorreo: ${correo}\nTeléfono: ${telefono}\nDepartamento: ${departamento}\nMensaje: ${mensaje}`);
