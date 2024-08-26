@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-color: #6d9e62;
+    background-color: #6f9c76;
     text-align: center;
     padding: 20px;
 }
@@ -37,7 +37,7 @@ main {
 }
 
 .developer-card {
-    background-color: #6d9e62;
+    background-color: #6f9c76;
     padding: 20px;
     border-radius: 12px;
     width: 220px;
@@ -76,7 +76,7 @@ main {
 }
 
 footer {
-    background-color: #6d9e62;
+    background-color: #6f9c76;
     text-align: center;
     padding: 10px;
 }
